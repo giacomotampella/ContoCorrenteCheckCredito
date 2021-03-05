@@ -22,6 +22,7 @@ posizione 7.
 Si scriva anche un main che verifichi il funzionamento della function stampando la
 data in cui il credito ha superato il limite oppure segnalare che il conto non ha superato il
 limite di credito.
+
 ***Tratto da: http://www.diegm.uniud.it/schaerf/Fondamenti/***
 
 > ## **TO-DO:**
