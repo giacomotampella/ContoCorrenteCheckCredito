@@ -1,7 +1,8 @@
 # ContoCorrenteCheckCredito
-Programma C++ dove si analizzano le informazioni sui movimenti di un conto corrente bancario.
+### **Programma C++ dove si analizzano le informazioni sui movimenti di un conto corrente bancario.**
 
-[contocorrente_check_credito] Le informazioni sui movimenti di un conto corrente bancario
+
+Le informazioni sui movimenti di un conto corrente bancario
 (in euro) sono inserite in un array utilizzando una struttura Movimento. Ogni movimento
 del conto è specificato secondo il seguente formato:
 • data: nel formato gg/mm/aaaa
@@ -21,4 +22,7 @@ posizione 7.
 Si scriva anche un main che verifichi il funzionamento della function stampando la
 data in cui il credito ha superato il limite oppure segnalare che il conto non ha superato il
 limite di credito.
-Tratto da: http://www.diegm.uniud.it/schaerf/Fondamenti/
+***Tratto da: http://www.diegm.uniud.it/schaerf/Fondamenti/***
+
+> ## **TO-DO:**
+>-) Correggere errore su calcolo del saldo totale finale.
