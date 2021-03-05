@@ -9,6 +9,18 @@ del conto è specificato secondo il seguente formato:
 • importo del movimento espresso come numero reale positivo
 • dal segno + (entrata) o - (uscita).
 
+Un esempio di tale formato è riportato di seguito:
+
+```{r class.source="bg-danger", class.output="bg-warning"}
+01/01/2020 1200.00 +
+20/01/2020 100.50 -
+05/02/2020 523.10 +
+10/02/2020 3000.00 -
+14/02/2020 1430.23 -
+20/03/2020 1555.55 +
+01/04/2020 56.00 +
+```
+
 Questi movimenti sono memorizzati come campo di una struttura ContoCorrente
 che, oltre all’array di movimenti mov con il relativo numero di movimenti n_mov contiene
 anche il numero del conto cc ed il saldo iniziale saldo_i.
