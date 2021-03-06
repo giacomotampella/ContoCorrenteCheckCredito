@@ -5,8 +5,11 @@
 Le informazioni sui movimenti di un conto corrente bancario
 (in euro) sono inserite in un array utilizzando una struttura Movimento. Ogni movimento
 del conto è specificato secondo il seguente formato:
+
 • data: nel formato gg/mm/aaaa
+
 • importo del movimento espresso come numero reale positivo
+
 • dal segno + (entrata) o - (uscita).
 
 Un esempio di tale formato è riportato di seguito:
