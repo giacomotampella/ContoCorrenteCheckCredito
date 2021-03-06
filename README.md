@@ -39,3 +39,5 @@ limite di credito.
 
 > ## **TO-DO:**
 >-) Correggere errore su calcolo del saldo totale finale.
+>
+>-) Impedire movimenti in negativo se già superata la soglia limite??
