@@ -27,13 +27,16 @@ Un esempio di tale formato è riportato di seguito:
 Questi movimenti sono memorizzati come campo di una struttura ContoCorrente
 che, oltre all’array di movimenti mov con il relativo numero di movimenti n_mov contiene
 anche il numero del conto cc ed il saldo iniziale saldo_i.
+
 Si scriva una funzione check_credito che abbia come parametri un conto corrente e
 un limite di credito c (con c < 0), e restituisca la posizione del movimento alla cui data il
 saldo è sceso sotto il valore limite c. Nel caso in cui il saldo non scenda mai sotto tale
 valore, la funzione deve restituire la posizione dell’ultimo movimento più uno.
+
 Nell’esempio precedente se il saldo iniziale è di 2000.00 euro e c = −500.00, la
 funzione restituisce la posizione 4. Se invece c = −1000.00, la funzione restituisce la
 posizione 7.
+
 Si scriva anche un main che verifichi il funzionamento della function stampando la
 data in cui il credito ha superato il limite oppure segnalare che il conto non ha superato il
 limite di credito.
