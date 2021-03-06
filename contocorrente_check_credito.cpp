@@ -44,33 +44,32 @@ float check_credito (ContoCorrente cnt, float c) {
 		cin >> cnt.n_mov;
 	} while (cnt.n_mov <= 0 || cnt.n_mov >= NMAX);
 	cout << endl;
-	float conto = cnt.saldo_i;
+	float saldo = cnt.saldo_i;
 	for (int i = 0; i < cnt.n_mov; i++) {
 		cnt.mov[i] = carica_movimento();
 		cout << endl;
 		if (cnt.mov[i].segno == '+') {
-			conto += cnt.mov[i].importo;
+			saldo += cnt.mov[i].importo;
 		} else {
-			conto -= cnt.mov[i].importo;
+			saldo -= cnt.mov[i].importo;
 		}
-		if (conto <= c) {
+		if (saldo < c) {
 			stampa_mov(cnt.mov[i]);
 		}
 	}
-	return conto;
 }
 
-float credito_tot (ContoCorrente cnt) {
-	float totale = cnt.saldo_i;
-	for (int i = 0; i < cnt.n_mov; i++) {
-		if (cnt.mov[i].segno == '+') {
-			totale += cnt.mov[i].importo;
+/*float saldo_totale (ContoCorrente conto) {
+	float saldo = conto.saldo_i;
+	for (int i = 0; i < conto.n_mov; i++) {
+		if (conto.mov[i].segno == '+') {
+			saldo = saldo + conto.mov[i].importo;
 		} else {
-			totale -= cnt.mov[i].importo;
+			saldo = saldo - conto.mov[i].importo;
 		}
 	}
-	cout << totale;
-}
+	return saldo;
+}*/
 
 int main() {
 	ContoCorrente conto;
@@ -89,5 +88,6 @@ int main() {
 	} while (c > 0);
 	cout << endl;
 	check_credito(conto, c);
-	cout << endl << endl << "Saldo finale: " << credito_tot(conto);
+/*	cout << endl << endl << "Saldo finale: ";
+	cout << saldo_totale(conto);*/
 }
